@@ -1,19 +1,19 @@
 import "./App.css";
-import { SiMui } from "react-icons/si";
-import { BiLogoTailwindCss } from "react-icons/bi";
-import { TfiMenuAlt } from "react-icons/tfi";
-import { TfiDashboard } from "react-icons/tfi";
-import { AiOutlineDashboard } from "react-icons/ai";
-import { MdOutlineAddShoppingCart } from "react-icons/md";
-import { FaCartShopping } from "react-icons/fa6";
-import { FaAddressCard } from "react-icons/fa";
+// import { SiMui } from "react-icons/si";
+// import { BiLogoTailwindCss } from "react-icons/bi";
+// import { TfiMenuAlt } from "react-icons/tfi";
+// import { TfiDashboard } from "react-icons/tfi";
+// import { AiOutlineDashboard } from "react-icons/ai";
+// import { MdOutlineAddShoppingCart } from "react-icons/md";
+// import { FaCartShopping } from "react-icons/fa6";
+// import { FaAddressCard } from "react-icons/fa";
 import Sidebar from "./Sidebar";
 import CollapsedSidebar from "./CollapsedSideBar";
 import MainContainer from "./MainContainer";
 import { useState } from "react";
 
 function App() {
-  const [isNavopen, setIsNavOpen] = useState(true);
+  const [isNavopen, setIsNavOpen] = useState<boolean>(true);
   return (
     <div className="bg-[#16191f] w-screen h-screen flex">
       {isNavopen && (

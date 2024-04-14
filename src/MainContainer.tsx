@@ -2,14 +2,14 @@ import React from "react";
 import { SiMui } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
-import { TfiDashboard } from "react-icons/tfi";
+// import { TfiDashboard } from "react-icons/tfi";
 import { AiOutlineDashboard } from "react-icons/ai";
-import { MdOutlineAddShoppingCart } from "react-icons/md";
+// import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaAddressCard } from "react-icons/fa";
-import Sidebar from "./Sidebar";
-import CollapsedSidebar from "./CollapsedSideBar";
-import { TypeAnimation } from "react-type-animation";
+// import Sidebar from "./Sidebar";
+// import CollapsedSidebar from "./CollapsedSideBar";
+// import { TypeAnimation } from "react-type-animation";
 import Typed from "typed.js";
 import { IoSend } from "react-icons/io5";
 
@@ -23,7 +23,7 @@ export default function MainContainer() {
   //   loop: true,
   // });
 
-  const el = React.useRef(null);
+  // const el = React.useRef(null);
   const el2 = React.useRef(null);
 
   // placeholder =
@@ -89,7 +89,7 @@ export default function MainContainer() {
 
       <div className="h-1/4 border border-slate-600 bg-[#20242c] rounded-lg">
         <textarea
-          type="text"
+          // type="text"
           id="el2"
           // ref={el2}
           placeholder="Enter text"

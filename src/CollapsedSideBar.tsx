@@ -1,14 +1,18 @@
-import React from "react";
-import { LuArrowLeftToLine } from "react-icons/lu";
+// import React from "react";
+// import { LuArrowLeftToLine } from "react-icons/lu";
 import { LuArrowRightFromLine } from "react-icons/lu";
 import { RxComponent1 } from "react-icons/rx";
 import { BsMenuButtonWide } from "react-icons/bs";
 import { CiHome } from "react-icons/ci";
 import { FaSignInAlt } from "react-icons/fa";
-import { MdAbc, MdArrowOutward } from "react-icons/md";
+// import { MdAbc, MdArrowOutward } from "react-icons/md";
 import { TbBrandVscode } from "react-icons/tb";
 
-export default function CollapsedSidebar({ setIsNavOpen }) {
+export default function CollapsedSidebar({
+  setIsNavOpen,
+}: {
+  setIsNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <div className="bg-[#222630] h-screen px-6">
       <div className="h-screen flex flex-col justify-between pb-8">

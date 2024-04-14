@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 import { LuArrowLeftToLine } from "react-icons/lu";
-import { LuArrowRightFromLine } from "react-icons/lu";
+// import { LuArrowRightFromLine } from "react-icons/lu";
 import { RxComponent1 } from "react-icons/rx";
 import { BsMenuButtonWide } from "react-icons/bs";
 import { CiHome } from "react-icons/ci";
@@ -8,7 +8,11 @@ import { FaSignInAlt } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import { TbBrandVscode } from "react-icons/tb";
 
-export default function Sidebar({ setIsNavOpen }) {
+export default function Sidebar({
+  setIsNavOpen,
+}: {
+  setIsNavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <div className="bg-[#222630] h-screen px-6">
       <div className="h-screen flex flex-col justify-between pb-8">
@@ -152,11 +156,11 @@ export default function Sidebar({ setIsNavOpen }) {
                 </clipPath>
               </defs>
             </svg>
-              <LuArrowLeftToLine
-                className="w-6 h-5 cursor-pointer hover:bg-[#393f4b]"
-                onClick={() => setIsNavOpen(false)}
-                // onClick={setIsNavOpen(false)}
-              />
+            <LuArrowLeftToLine
+              className="w-6 h-5 cursor-pointer hover:bg-[#393f4b]"
+              onClick={() => setIsNavOpen(false)}
+              // onClick={setIsNavOpen(false)}
+            />
           </div>
           <div
             className="border border-slate-400 p-1 text-center rounded-xl
